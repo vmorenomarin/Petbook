@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Petagram</string>
-    
+    <string name="pname">Nombre: </string>
+    <string name="pmaster">Dueño: </string>
+    <string name="pphone">Teléfono: </string>
+    <string name="page">Edad: </string>
 </resources>

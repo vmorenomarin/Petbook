@@ -6,18 +6,16 @@ package com.vmorenomarin.petbook;
 public class Pet {
     private int photo;
     private String name;
-    private String master;
     private int age;
+    private String master;
     private int phone;
 
-    public Pet(int photo, String name, String master, int age, int phone) {
+    public Pet(int photo, String name, int age, String master,  int phone) {
         this.photo = photo;
         this.name = name;
-        this.master = master;
         this.age = age;
+        this.master = master;
         this.phone = phone;
-
-
     }
 
     public int getPhoto() {
@@ -36,20 +34,20 @@ public class Pet {
         this.name = name;
     }
 
-    public String getMaster() {
-        return master;
-    }
-
-    public void setMaster(String master) {
-        this.master = master;
-    }
-
     public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getMaster() {
+        return master;
+    }
+
+    public void setMaster(String master) {
+        this.master = master;
     }
 
     public int getPhone() {
