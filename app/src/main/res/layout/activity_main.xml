@@ -8,7 +8,7 @@
 
 
 
-    <include android:id="@+id/miActionBar"
+    <include android:id="@+id/actionBar"
         layout="@layout/action_bar">
     </include>
 
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:padding="@dimen/activity_horizontal_margin"
-        android:layout_below="@+id/miActionBar"
+        android:layout_below="@id/actionBar"
         >
     </android.support.v7.widget.RecyclerView>
 
