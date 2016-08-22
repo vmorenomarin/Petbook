@@ -1,2 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_909a56a2eb8f860e291c39e274b7d814d035dd2d/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_e521be9d6f86882c790f4dc55f25352d68f5abe0/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_85120bc6801d937b535cd3a91ea63b28577ce7b6/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_e5e2762df18c20de8526fb6579665df8eb62e110/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_ac4c58ba807f4afcf10ac39af195ecd000560310/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_a73c1fae830d31f9f93582828a5886fae03a7d58/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="dffe583616ce26ce2aff1b656bd42d6c55c8e5ad">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_15d7f5662c89118af7498a083eb23b60b6f7b083/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_d815cc46e672f91aae3f5b16c7d60b25d83c144b/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_75c1df4277458b00af1c8214c647067c44b592d7/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4e7e17a29aed038054e16013ea075dd97a6aa8b1">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ead3acc176cfd9c41f0a5033584cce7107b406c1/classes.dex" />
+    </item>
+
+</items>
