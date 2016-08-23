@@ -69,16 +69,13 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
         private TextView tvPetName;
         private TextView tvPetAge;
         private ImageButton btnfav;
-        private ImageButton viewfav;
-
 
         public PetViewHolder(View itemView) {
             super(itemView);
             imgPet    =   (ImageView) itemView.findViewById(R.id.imgPetCV);
             tvPetName =   (TextView)  itemView.findViewById(R.id.tvPetName);
             tvPetAge  =   (TextView)  itemView.findViewById(R.id.tvPetAge);
-            btnfav    =   (ImageButton) itemView.findViewById(R.id.btnfav);
-            viewfav   =   (ImageButton) itemView.findViewById(R.id.viewfav);
+            btnfav    =   (ImageButton) itemView.findViewById(R.id.btnfav);;
         }
     }
 
