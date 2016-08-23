@@ -59,7 +59,8 @@ card_view:cardCornerRadius="@dimen/corner_radius_cardview">
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="130dp"
-            android:background="@drawable/bone1"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bone"
             />
 
     </LinearLayout>
