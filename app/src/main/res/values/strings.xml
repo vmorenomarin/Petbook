@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Petagram</string>
-    <string name="pname">Nombre: </string>
-    <string name="pmaster">Dueño: </string>
-    <string name="pphone">Teléfono: </string>
-    <string name="page">Edad (en años): </string>
+    <string name="app_name">Petbook</string>
+    <string name="pname">Nombre</string>
+    <string name="pmaster">Dueño</string>
+    <string name="pphone">Teléfono</string>
+    <string name="page">(5 años)</string>
 </resources>

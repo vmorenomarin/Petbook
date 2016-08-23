@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 /**
@@ -21,22 +19,6 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
     public PetAdapter(ArrayList<Pet> pets){
         this.pets = pets;}
 
-    public class PetViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imgPetCV;
-        private TextView tvPetNameCV;
-        private TextView tvPetAgeCV;
-        private TextView tvMasterCV;
-        private TextView tvPhoneCV;
-
-        public PetViewHolder(View itemView) {
-            super(itemView);
-            imgPetCV    =   (ImageView) itemView.findViewById(R.id.imgPetCV);
-            tvPetNameCV =   (TextView)  itemView.findViewById(R.id.tvPetName);
-            tvPetAgeCV  =   (TextView)  itemView.findViewById(R.id.tvPetAge);
-            tvMasterCV  =   (TextView)  itemView.findViewById(R.id.tvMaster);
-            tvPhoneCV   =   (TextView)  itemView.findViewById(R.id.tvPhone);
-        }
-    }
 
     @Override
     public PetViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -47,17 +29,28 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
     @Override
     public void onBindViewHolder(PetViewHolder petViewHolder, int position) {
         Pet pet = pets.get(position);
-        petViewHolder.imgPetCV.setImageResource(pet.getPhoto());
-        petViewHolder.tvPetNameCV.setText(pet.getName());
-        petViewHolder.tvPetAgeCV.setText(pet.getAge());
-        petViewHolder.tvMasterCV.setText(pet.getMaster());
-        petViewHolder.tvPhoneCV.setText(pet.getPhone());
+        petViewHolder.imgPet.setImageResource(pet.getPhoto());
+        petViewHolder.tvPetName.setText(pet.getName());
+        petViewHolder.tvPetAge.setText(pet.getAge());
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return pets.size();
     }
 
+    public class PetViewHolder extends RecyclerView.ViewHolder {
+        private ImageView imgPet;
+        private TextView tvPetName;
+        private TextView tvPetAge;
 
+
+        public PetViewHolder(View itemView) {
+            super(itemView);
+            imgPet    =   (ImageView) itemView.findViewById(R.id.imgPetCV);
+            tvPetName =   (TextView)  itemView.findViewById(R.id.tvPetName);
+            tvPetAge  =   (TextView)  itemView.findViewById(R.id.tvPetAge);
+        }
+    }
 }
