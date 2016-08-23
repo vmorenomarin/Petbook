@@ -29,13 +29,13 @@ card_view:cardCornerRadius="@dimen/corner_radius_cardview">
         android:layout_below="@id/imgPetCV"
         android:gravity="center_vertical">
 
-        <ImageView
-            android:id="@+id/bone"
+        <ImageButton
+            android:id="@+id/btnfav"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/bone2"
+            android:background="@drawable/bone2"
             />
         <TextView
             android:id="@+id/tvPetName"

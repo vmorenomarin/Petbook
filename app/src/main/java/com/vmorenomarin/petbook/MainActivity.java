@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar custom_bar = (Toolbar) findViewById(R.id.actionBar);
+
         setSupportActionBar(custom_bar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -37,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
         initAdapter();
     }
 
+    public PetAdapter adapter;
     private void initAdapter() {
-        PetAdapter adapter = new PetAdapter(pets);
+        PetAdapter adapter = new PetAdapter(pets, this);
         petList.setAdapter(adapter);
     }
 
