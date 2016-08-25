@@ -27,6 +27,6 @@
         android:textSize="@dimen/textAbout"
         android:paddingTop="50dp"
         android:textStyle="bold"
-        android:textColorLink="@android:color/holo_blue_light"
+        android:onClick="onClick"
         android:layout_gravity="center_horizontal"/>
 </LinearLayout>
