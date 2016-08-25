@@ -7,6 +7,9 @@
     <string name="menu_fav">Favoritos</string>
     <string name="menu_contact">"Contacto</string>
     <string name="menu_about">"Acerca de</string>
+    <string name="tvAboutActivity">Esta app fue desarrollada con la intención de aprender respecto al desarrolo de apps en Android. En ella son implemtados algunos de
+    los conceptos más importantes para la elaboración de una app, que sea consistente y funcional. Si tiene alguna inquietud, favor ponerse en contacto con Víctor Moreno Marín
+    a través del email</string>
 
 
 <!-- TODO: Remove or change this placeholder text -->
