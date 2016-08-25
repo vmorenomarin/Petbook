@@ -15,16 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity android:name=".PetDetailActivity"
-           android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".PetDetailActivity"
+            android:parentActivityName=".MainActivity">
 
-
-           <!-- Soporte para versiones menores -->
-           <meta-data
-               android:name="android.support.PARENT_ACTIVITY"
-               android:value=".MainActivity">
-           </meta-data>
-       </activity>
+            <!-- Soporte para versiones menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ContactActivity"></activity>
     </application>
 
 </manifest>
