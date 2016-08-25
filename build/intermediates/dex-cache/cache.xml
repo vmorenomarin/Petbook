@@ -2,10 +2,24 @@
 <items version="2" >
 
     <item
+        jar="/home/victor/.gradle/caches/modules-2/files-2.1/com.sun.mail/android-mail/1.5.5/53a2f927b235acb565dbe9314ececfb7e6d43020/android-mail-1.5.5.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="53a2f927b235acb565dbe9314ececfb7e6d43020">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-mail-1.5.5_854d17d29e72b0761ba2e46e8903c87b55c8f3bb/classes.dex" />
+    </item>
+    <item
+        jar="/home/victor/.gradle/caches/modules-2/files-2.1/com.sun.mail/android-activation/1.5.5/5442d5e05808145434b750c9f8a0c3f537383c5a/android-activation-1.5.5.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5442d5e05808145434b750c9f8a0c3f537383c5a">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-activation-1.5.5_f8adfb9ac81e565e59ec321115ad9181d39c8c00/classes.dex" />
+    </item>
+    <item
         jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="dbb2595df661b0b6b72896680873ab0fab096229">
+        sha1="39e34eed40fc880b9341c61d534929b62ce614ef">
         <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ead3acc176cfd9c41f0a5033584cce7107b406c1/classes.dex" />
     </item>
 

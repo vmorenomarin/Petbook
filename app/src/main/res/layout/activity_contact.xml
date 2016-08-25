@@ -4,14 +4,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context="com.vmorenomarin.petbook.ContactActivity">
 
 
-    <include android:id="@+id/actionBar"
-        layout="@layout/action_bar">
-    </include>
 
+        <include android:id="@+id/actionBar"
+            layout="@layout/action_bar">
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/toolbar_title"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/NameContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etNameContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_hint"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/EmailContac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <EditText
+                    android:id="@+id/etEmailContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:layout_gravity="center_horizontal"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/etComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/comment_hint"
+                    android:inputType="text"
+                    android:layout_gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/send_comment"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:onClick="setBtnSend"/>
+
+        </LinearLayout>
 
 
 </LinearLayout>
