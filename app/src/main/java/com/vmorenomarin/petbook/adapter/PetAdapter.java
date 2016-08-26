@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vmorenomarin.petbook.Pet;
+import com.vmorenomarin.petbook.pojo.Pet;
 import com.vmorenomarin.petbook.R;
 
 import java.util.ArrayList;

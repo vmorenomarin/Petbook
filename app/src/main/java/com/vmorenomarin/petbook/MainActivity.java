@@ -1,15 +1,18 @@
 package com.vmorenomarin.petbook;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.design.widget.TabLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.support.v4.view.ViewPager;
 
-import com.vmorenomarin.petbook.adapter.PetAdapter;
+import com.vmorenomarin.petbook.adapter.PageAdapter;
+import com.vmorenomarin.petbook.fragment.MainFragment;
+import com.vmorenomarin.petbook.fragment.MyPetFragment;
 
 import java.util.ArrayList;
 
@@ -17,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private Toolbar toolbar;
+    private Toolbar custom_bar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     ArrayList<Fragment> fragments;
@@ -30,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar custom_bar = (Toolbar) findViewById(R.id.actionBar);
         setSupportActionBar(custom_bar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        setUpViewPager();
+
+        if (custom_bar != null) {
+            setSupportActionBar(custom_bar);
+        }
 
 
     }
@@ -39,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -61,5 +69,20 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private ArrayList<Fragment> addFragments () {
+        ArrayList<Fragment> fragments = new ArrayList<>();
 
+        fragments.add(new MainFragment());
+        fragments.add(new MyPetFragment());
+
+        return fragments;
+    }
+
+    public void setUpViewPager() {
+        viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), addFragments()));
+        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setText("Mascotas").setIcon(R.drawable.ic_action_name);
+        tabLayout.getTabAt(1).setIcon(R.drawable.mypet).setText("Mi mascota");
+
+    }
 }

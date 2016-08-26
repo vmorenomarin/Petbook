@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.vmorenomarin.petbook.adapter.PetAdapter;
+import com.vmorenomarin.petbook.pojo.Pet;
 
 import java.util.ArrayList;
 
