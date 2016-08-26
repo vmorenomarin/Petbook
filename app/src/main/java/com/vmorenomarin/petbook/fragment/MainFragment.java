@@ -37,7 +37,6 @@ public class MainFragment extends Fragment {
         petList.setLayoutManager(llm);
         initPetList();
         initAdapter();
-
         return v;
     }
 

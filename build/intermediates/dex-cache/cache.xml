@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/exploded-aar/com.mikhaellopez/circularimageview/3.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/home/victor/Programming/Coursera/java_android/Android/Petbook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mikhaellopez-circularimageview-3.0.2_81db7452cfcd1953e7570df42bf334b4efa3f9ee/classes.dex" />
+    </item>
+
+</items>
