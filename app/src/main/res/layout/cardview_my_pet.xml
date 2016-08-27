@@ -7,6 +7,8 @@ android:id="@+id/cvMyPet"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:layout_marginBottom="@dimen/activity_vertical_margin"
+card_view:contentPadding= "5dp"
+card_view:cardUseCompatPadding="true"
 card_view:cardCornerRadius="@dimen/corner_radius_cardview">
 
     <RelativeLayout
@@ -26,7 +28,7 @@ card_view:cardCornerRadius="@dimen/corner_radius_cardview">
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_below="@id/imgPetCV"
+        android:layout_below="@id/imgMyPetCV"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -39,8 +41,7 @@ card_view:cardCornerRadius="@dimen/corner_radius_cardview">
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="@string/page"
-
-            android:layout_weight="2"/>/>
+            android:layout_weight="2"/>
 
         <ImageView
             android:id="@+id/fav"

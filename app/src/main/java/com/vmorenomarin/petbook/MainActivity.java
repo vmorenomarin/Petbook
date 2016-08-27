@@ -37,14 +37,10 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setUpViewPager();
 
-        if (custom_bar != null) {
-            setSupportActionBar(custom_bar);
-        }
-
 
     }
 
-      @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return super.onCreateOptionsMenu(menu);

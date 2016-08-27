@@ -1,11 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragment.MyPetFragment">
-
-
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,28 +12,59 @@
         android:orientation="vertical">
 
 
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/cimPhoto"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/pet3"
-        android:layout_gravity="center_horizontal"
-        app:civ_border_color="@color/colorAccent"
-        app:civ_border_width="4dp"
-        app:civ_shadow="true"
-        app:civ_shadow_radius="10"
-        app:civ_shadow_color="#8BC34A"
-        />
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
 
-       <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMyPet"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:layout_below="@id/actionBar"
-        >
-    </android.support.v7.widget.RecyclerView>
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/cimPhoto"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/pet3"
+                        android:layout_gravity="center_horizontal"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#8BC34A"
+                        app:layout_collapseMode="parallax"/>
+                        <!---->
+
+                <TextView
+                    android:id="@+id/myPetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Misifú"
+                    android:textSize="30dp"
+                    android:layout_marginTop="240dp"
+                    android:textColor="@android:color/white"/>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+               <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMyPet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/activity_horizontal_margin">
+                </android.support.v7.widget.RecyclerView>
+
 
     </LinearLayout>
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

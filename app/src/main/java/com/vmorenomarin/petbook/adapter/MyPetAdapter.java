@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.vmorenomarin.petbook.R;
@@ -37,6 +38,7 @@ public class MyPetAdapter extends RecyclerView.Adapter<MyPetAdapter.MyPetViewHol
     public void onBindViewHolder(MyPetViewHolder myPetViewHolder, int position) {
         final Pet pet = mypet.get(position);
         myPetViewHolder.imgMyPet.setImageResource(pet.getPhoto());
+        myPetViewHolder.tvMyPetAge.setText(pet.getAge());
     }
 
     @Override
@@ -46,11 +48,13 @@ public class MyPetAdapter extends RecyclerView.Adapter<MyPetAdapter.MyPetViewHol
 
     public static class MyPetViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgMyPet;
+        private TextView tvMyPetAge;
 
 
         public MyPetViewHolder(View itemView) {
             super(itemView);
             imgMyPet    =   (ImageView) itemView.findViewById(R.id.imgMyPetCV);
+            tvMyPetAge  =   (TextView)  itemView.findViewById(R.id.tvMyPetAge);
 
         }
     }

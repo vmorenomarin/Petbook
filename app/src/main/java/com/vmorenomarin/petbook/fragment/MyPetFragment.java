@@ -3,6 +3,7 @@ package com.vmorenomarin.petbook.fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -29,17 +30,25 @@ public class MyPetFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_my_pet, container, false);
 
-        CircularImageView circularImageView = (CircularImageView) v.findViewById(R.id.cimPhoto);
-        myPetList = (RecyclerView) v.findViewById(R.id.rvMyPet);
-
-
-        GridLayoutManager glm = new GridLayoutManager(getActivity(), 3);
+       myPetList = (RecyclerView) v.findViewById(R.id.rvMyPet);
+        GridLayoutManager glm = new GridLayoutManager(getActivity(), 2);
 
         myPetList.setLayoutManager(glm);
         initMyPetList();
+        initCollapsingToolbar(v);
         initAdapter();
         return v;
     }
+
+    private void initCollapsingToolbar(View root) {
+        CollapsingToolbarLayout collapsingToolbarLayout =
+                (CollapsingToolbarLayout) root.findViewById(R.id.collapsingToolbar);
+
+        collapsingToolbarLayout.setContentScrimColor(getResources().getColor(R.color.colorAccent));
+        CircularImageView circularImageView = (CircularImageView) root.findViewById(R.id.cimPhoto);
+
+    }
+
 
     public MyPetAdapter adapter;
     private void initAdapter() {
@@ -50,16 +59,16 @@ public class MyPetFragment extends Fragment {
     private void initMyPetList() {
         mypet = new ArrayList<Pet>();
 
-        mypet.add(new Pet(R.drawable.pet1, "Pelusa", "(3 años)"));
-        mypet.add(new Pet(R.drawable.pet2, "Gasparin","(5 años)"));
-        mypet.add(new Pet(R.drawable.pet3, "Misifu","(2 años)"));
-        mypet.add(new Pet(R.drawable.pet4, "Elmo","(2 años)"));
-        mypet.add(new Pet(R.drawable.pet5, "Anita","(3 años)"));
-        mypet.add(new Pet(R.drawable.pet6, "Salamita","(4 años)"));
-        mypet.add(new Pet(R.drawable.pet7, "Lilith","(2 años)"));
-        mypet.add(new Pet(R.drawable.pet8, "Hugin y Menin","6 años"));
-        mypet.add(new Pet(R.drawable.pet9, "Marti","(2 años)"));
-        mypet.add(new Pet(R.drawable.pet10, "Zafir","(3 años)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu", "(3)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(5)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(2)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(2)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(3)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(4)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(2)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","6"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(2)"));
+        mypet.add(new Pet(R.drawable.pet3, "Misifu","(3)"));
 
     }
 
